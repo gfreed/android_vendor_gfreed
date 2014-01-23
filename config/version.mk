@@ -1,0 +1,8 @@
+TARGET_PRODUCT_SHORT := $(TARGET_PRODUCT)
+TARGET_PRODUCT_SHORT := $(subst gofree_,,$(TARGET_PRODUCT_SHORT))
+
+ROM_VERSION := $(PLATFORM_VERSION)-$(shell date +%Y%m%d-%H%M%z)-$(TARGET_PRODUCT_SHORT)
+
+PRODUCT_PROPERTY_OVERRIDES += \
+  ro.modversion=GoFree-$(ROM_VERSION) \
+  ro.omni.version=$(ROM_VERSION)
