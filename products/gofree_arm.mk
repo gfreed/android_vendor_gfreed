@@ -9,5 +9,3 @@ PRODUCT_MODEL := GoFree on ARM Emulator
 PRODUCT_PROPERTY_OVERRIDES += \
   ro.sf.lcd_density=240
 
-PRODUCT_COPY_FILES += \
-  vendor/gofree/prebuilt/etc/init.goldfish.rc:root/init.goldfish.rc
