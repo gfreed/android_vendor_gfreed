@@ -11,4 +11,9 @@ PRODUCT_PACKAGES += \
   openvpn \
   powertop \
   tune2fs \
-  vim
+  vim \
+  CMFileManager \
+  Torch \
+  OpenDelta \
+  Apollo \
+  Superuser
