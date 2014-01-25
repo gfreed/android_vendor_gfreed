@@ -8,3 +8,6 @@ PRODUCT_MODEL := GoFree on ARM Emulator
 
 PRODUCT_PROPERTY_OVERRIDES += \
   ro.sf.lcd_density=240
+
+PRODUCT_PACKAGE_OVERLAYS += vendor/gofree/overlay/goldfish
+
