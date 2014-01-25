@@ -10,6 +10,7 @@ PRODUCT_PACKAGES += \
   nano \
   openvpn \
   powertop \
+  su \
   tune2fs \
   vim \
   CMFileManager \
