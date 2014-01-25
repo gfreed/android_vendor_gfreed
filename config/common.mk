@@ -10,6 +10,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
   ro.com.android.dateformat=dd-MM-yyyy \
   persist.sys.root_access=1 \
   ro.com.android.dataroaming=false \
+  persist.sys.root_access=3
 
 PRODUCT_COPY_FILES += \
   vendor/gofree/prebuilt/bin/sysinit:system/bin/sysinit \
