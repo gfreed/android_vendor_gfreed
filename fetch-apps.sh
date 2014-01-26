@@ -23,6 +23,8 @@ fetch 'https://guardianproject.info/releases/orbot-latest.apk'
 fetch 'https://guardianproject.info/releases/orweb-latest.apk'
 fetch 'http://nightlies.csipsimple.com/armeabi-v7a/CSipSimple-latest-armeabi-v7a.apk'
 fetch 'http://downloads.buddycloud.com/packages/android/buddycloud-latest.apk'
+fetch 'https://f-droid.org/repo/net.osmand.plus_145.apk'
+fetch 'https://f-droid.org/repo/com.menny.android.anysoftkeyboard_111.apk'
 
 echo LOCAL_PATH := \$\(call my-dir\) > prebuilt/apps/Android.mk
 echo -n PRODUCT_PACKAGES += > config/fetched_packages.mk
