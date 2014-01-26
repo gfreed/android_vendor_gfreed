@@ -17,8 +17,8 @@ PRODUCT_COPY_FILES += \
   vendor/gofree/prebuilt/bin/sysinit:system/bin/sysinit \
   vendor/gofree/prebuilt/etc/init.local.rc:root/init.gofree.rc
 
-PRODUCT_COPY_FILES += \
-  $(shell ls vendor/gofree/prebuilt/apps/*.apk|sed 's;.*;vendor/gofree/prebuilt/apps/\0:/data/app/\0;')
+BUILD_PREBUILT += \
+  $(shell ls vendor/gofree/prebuilt/apps/\(*.apk\))
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/gofree/overlay/common
 
