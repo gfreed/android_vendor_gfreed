@@ -9,10 +9,12 @@ function fetch {
 fetch 'https://f-droid.org/FDroid.apk'
 
 echo LOCAL_PATH := \$\(call my-dir\) > prebuilt/apps/Android.mk
+echo -n PRODUCT_PACKAGES += > config/fetched_packages.mk
 
 ls prebuilt/apps/*.apk | while read FILE ; do
   APK=$(echo $FILE | sed 's:.*/::')
   NAME=$(echo $APK | sed 's:/[.]apk::')
+  echo -e -n "\\\\\n  $NAME" >> config/fetched_packages.mk
   cat >> prebuilt/apps/Android.mk << EOF
 
 include \$(CLEAR_VARS)
@@ -26,3 +28,5 @@ LOCAL_CERTIFICATE := PRESIGNED
 include \$(BUILD_PREBUILT)
 EOF
 done
+
+echo >> config/fetched_packages.mk
