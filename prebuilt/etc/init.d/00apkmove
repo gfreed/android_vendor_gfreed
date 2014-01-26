@@ -1,0 +1,4 @@
+#!/system/bin/sh
+if [ -f /system/app/fennec*.apk ] && ! [ -f /data/app/fennec*.apk ]; then
+  cp /system/app/fennec*.apk /data/app/
+fi
