@@ -7,6 +7,7 @@ function fetch {
 }
 
 fetch 'https://f-droid.org/FDroid.apk'
+fetch 'https://ftp.mozilla.org/pub/mozilla.org/mobile/releases/latest/android/multi/fennec-26.0.1.multi.android-arm.apk'
 
 echo LOCAL_PATH := \$\(call my-dir\) > prebuilt/apps/Android.mk
 echo -n PRODUCT_PACKAGES += > config/fetched_packages.mk
