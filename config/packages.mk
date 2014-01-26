@@ -18,3 +18,6 @@ PRODUCT_PACKAGES += \
   OpenDelta \
   Apollo \
   Superuser
+
+-include vendor/gofree/config/fetched_packages.mk
+
