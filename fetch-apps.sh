@@ -18,6 +18,11 @@ fetch 'https://f-droid.org/repo/com.owncloud.android_105002.apk'
 fetch 'https://f-droid.org/repo/de.luhmer.owncloudnewsreader_39.apk'
 fetch 'https://f-droid.org/repo/org.jfedor.frozenbubble_23.apk'
 fetch 'https://f-droid.org/repo/org.sufficientlysecure.keychain_22000.apk'
+fetch 'https://guardianproject.info/releases/chatsecure-latest.apk'
+fetch 'https://guardianproject.info/releases/orbot-latest.apk'
+fetch 'https://guardianproject.info/releases/orweb-latest.apk'
+fetch 'http://nightlies.csipsimple.com/armeabi-v7a/CSipSimple-latest-armeabi-v7a.apk'
+fetch 'http://downloads.buddycloud.com/packages/android/buddycloud-latest.apk'
 
 echo LOCAL_PATH := \$\(call my-dir\) > prebuilt/apps/Android.mk
 echo -n PRODUCT_PACKAGES += > config/fetched_packages.mk
