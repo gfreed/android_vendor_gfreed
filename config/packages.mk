@@ -17,4 +17,5 @@ PRODUCT_PACKAGES += \
   Torch \
   OpenDelta \
   Apollo \
+  UnifiedEmail \
   Superuser
