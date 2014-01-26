@@ -13,7 +13,7 @@ echo -n PRODUCT_PACKAGES += > config/fetched_packages.mk
 
 ls prebuilt/apps/*.apk | while read FILE ; do
   APK=$(echo $FILE | sed 's:.*/::')
-  NAME=$(echo $APK | sed 's:/[.]apk::')
+  NAME=$(echo $APK | sed 's:[.]apk::')
   echo -e -n " \\\\\n  $NAME" >> config/fetched_packages.mk
   cat >> prebuilt/apps/Android.mk << EOF
 
