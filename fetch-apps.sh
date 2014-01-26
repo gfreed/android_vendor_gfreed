@@ -8,6 +8,16 @@ function fetch {
 
 fetch 'https://f-droid.org/FDroid.apk'
 fetch 'https://ftp.mozilla.org/pub/mozilla.org/mobile/releases/latest/android/multi/fennec-26.0.1.multi.android-arm.apk'
+fetch 'https://f-droid.org/repo/com.google.zxing.client.android_95.apk'
+fetch 'https://f-droid.org/repo/net.androgames.level_33.apk'
+fetch 'https://f-droid.org/repo/de.schildbach.wallet_149.apk'
+fetch 'https://f-droid.org/repo/org.videolan.vlc_1304.apk'
+fetch 'https://f-droid.org/repo/org.connectbot_365.apk'
+fetch 'https://f-droid.org/repo/de.schaeuffelhut.android.openvpn_39.apk'
+fetch 'https://f-droid.org/repo/com.owncloud.android_105002.apk'
+fetch 'https://f-droid.org/repo/de.luhmer.owncloudnewsreader_39.apk'
+fetch 'https://f-droid.org/repo/org.jfedor.frozenbubble_23.apk'
+fetch 'https://f-droid.org/repo/org.sufficientlysecure.keychain_22000.apk'
 
 echo LOCAL_PATH := \$\(call my-dir\) > prebuilt/apps/Android.mk
 echo -n PRODUCT_PACKAGES += > config/fetched_packages.mk
