@@ -25,6 +25,7 @@ fetch 'http://nightlies.csipsimple.com/armeabi-v7a/CSipSimple-latest-armeabi-v7a
 fetch 'http://downloads.buddycloud.com/packages/android/buddycloud-latest.apk'
 fetch 'https://f-droid.org/repo/net.osmand.plus_145.apk'
 fetch 'https://f-droid.org/repo/com.menny.android.anysoftkeyboard_111.apk'
+fetch 'https://f-droid.org/repo/org.adaway_47.apk'
 
 echo LOCAL_PATH := \$\(call my-dir\) > prebuilt/apps/Android.mk
 echo -n PRODUCT_PACKAGES += > config/fetched_packages.mk
