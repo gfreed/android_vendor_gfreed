@@ -15,8 +15,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 PRODUCT_COPY_FILES += \
   vendor/gofree/prebuilt/bin/sysinit:system/bin/sysinit \
-  vendor/gofree/prebuilt/etc/init.local.rc:root/init.gofree.rc \
-  vendor/gofree/prebuilt/etc/init.d/00apkmove:system/etc/init.d/00apkmove
+  vendor/gofree/prebuilt/etc/init.local.rc:root/init.gofree.rc
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/gofree/overlay/common
 
