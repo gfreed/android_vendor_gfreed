@@ -1,4 +1,3 @@
-$(call inherit-product, device/generic/mini-emulator-armv7-a-neon/BoardConfig.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full.mk)
 $(call inherit-product, vendor/gofree/config/common.mk)
 
