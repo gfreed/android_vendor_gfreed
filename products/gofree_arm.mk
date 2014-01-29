@@ -4,7 +4,7 @@ $(call inherit-product, vendor/gofree/config/common.mk)
 PRODUCT_NAME  := gofree_arm
 PRODUCT_BRAND := Android
 PRODUCT_MODEL := GoFree on ARM Emulator
-PRODUCT_DEVICE := mini-emulator-armv7-a-neon
+PRODUCT_DEVICE := gofree-emulator
 
 PRODUCT_PROPERTY_OVERRIDES += \
   ro.sf.lcd_density=240
