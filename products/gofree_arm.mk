@@ -7,5 +7,7 @@ PRODUCT_MODEL := GoFree on ARM Emulator
 PRODUCT_DEVICE := gofree-emulator
 
 PRODUCT_PROPERTY_OVERRIDES += \
-  ro.sf.lcd_density=240
+  rild.libargs=-d /dev/ttyS0 \
+  rild.libpath=/system/lib/libreference-ril.so \
+  ro.config.nocheckin=yes
 
