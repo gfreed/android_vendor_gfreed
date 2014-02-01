@@ -1,0 +1,12 @@
+{
+  "Global": {
+    "id": "GoFree ROM",
+    "version": 0.1,
+    "about": "GoFree ROM - a free software showcase ROM"
+  },
+  "Preferences": {
+    "datareporting.policy.dataSubmissionEnabled": false,
+    "browser.search.defaultenginename": "DuckDuckGo"
+  }
+}
+
