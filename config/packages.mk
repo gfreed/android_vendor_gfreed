@@ -19,5 +19,9 @@ PRODUCT_PACKAGES += \
   Apollo \
   Superuser
 
+# libmemtrack is needed e.g. by foursquare
+# looks like it's available on all devices
+PRODUCT_PACKAGES += libmemtrack
+
 -include vendor/gofree/config/fetched_packages.mk
 
