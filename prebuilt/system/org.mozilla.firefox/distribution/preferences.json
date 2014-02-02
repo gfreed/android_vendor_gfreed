@@ -5,8 +5,8 @@
     "about": "GoFree ROM - a free software showcase ROM"
   },
   "Preferences": {
-    "datareporting.policy.dataSubmissionEnabled": false,
-    "browser.search.defaultenginename": "DuckDuckGo"
+    "datareporting.policy.dataSubmissionEnabled.boolean": false,
+    "browser.search.defaultenginename.string": "DuckDuckGo"
   }
 }
 
