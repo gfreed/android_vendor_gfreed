@@ -1,8 +1,8 @@
 {
   "Global": {
-    "id": "GoFree ROM",
+    "id": "GfreeD ROM",
     "version": 0.1,
-    "about": "GoFree ROM - a free software showcase ROM"
+    "about": "GfreeD ROM - a free software showcase ROM"
   },
   "Preferences": {
     "datareporting.policy.dataSubmissionEnabled.boolean": false,

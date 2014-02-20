@@ -45,7 +45,7 @@ ls prebuilt/apps/*.apk | while read FILE ; do
 
 include \$(CLEAR_VARS)
 LOCAL_MODULE := $NAME
-LOCAL_MODULE_OWNER := gofree
+LOCAL_MODULE_OWNER := gfreed
 LOCAL_SRC_FILES := \$(LOCAL_MODULE).apk
 # LOCAL_MODULE_TAGS := tests
 LOCAL_MODULE_SUFFIX := .apk
