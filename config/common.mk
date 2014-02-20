@@ -15,6 +15,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 PRODUCT_COPY_FILES += \
   vendor/gfreed/prebuilt/bin/sysinit:system/bin/sysinit \
+  vendor/gfreed/prebuilt/bin/backuptool.functions:system/bin/backuptool.functions \
+  vendor/gfreed/prebuilt/bin/backuptool.sh:system/bin/backuptool.sh \
   vendor/gfreed/prebuilt/etc/init.local.rc:root/init.gfreed.rc \
   vendor/gfreed/prebuilt/system/org.mozilla.firefox/distribution/preferences.json:system/org.mozilla.firefox/distribution/preferences.json \
   vendor/gfreed/prebuilt/system/org.mozilla.firefox/distribution/searchplugins/common/duckduckgo.xml:system/org.mozilla.firefox/distribution/searchplugins/common/duckduckgo.xml \
