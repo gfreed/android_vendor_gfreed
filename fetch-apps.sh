@@ -3,7 +3,13 @@
 function fetch {
   export URL=$1
   export FILE=$(echo $URL | sed 's:.*/::')
-  ( cd prebuilt/apps ; [ -f "$FILE" ] || wget "$URL" )
+  (
+    cd prebuilt/apps
+    if ! [ -f "$FILE" ]; then
+      wget "$URL"
+      if which advzip && [ -f "$FILE" ] ; then advzip -z4 "$FILE" ; fi
+    fi
+  )
 }
 
 fetch 'https://f-droid.org/FDroid.apk'
