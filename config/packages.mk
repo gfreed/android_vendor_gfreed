@@ -17,11 +17,12 @@ PRODUCT_PACKAGES += \
   Torch \
   OpenDelta \
   Apollo \
-  Superuser
+  Superuser \
+  Stk
 
 # libmemtrack is needed e.g. by foursquare
 # looks like it's available on all devices
 PRODUCT_PACKAGES += libmemtrack
 
--include vendor/gofree/config/fetched_packages.mk
+-include vendor/gfreed/config/fetched_packages.mk
 

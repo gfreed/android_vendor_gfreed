@@ -1,5 +1,6 @@
-add_lunch_combo gofree_arm-eng
-add_lunch_combo gofree_maguro-eng
+add_lunch_combo gfreed_arm-eng
+add_lunch_combo gfreed_maguro-eng
+add_lunch_combo gfreed_maguro-userdebug
 
 export DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 

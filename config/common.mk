@@ -1,6 +1,6 @@
 SUPERUSER_EMBEDDED := true
 
-PRODUCT_BRAND ?= GoFree
+PRODUCT_BRAND ?= GfreeD
 
 PRODUCT_PROPERTY_OVERRIDES += \
   keyguard.no_require_sim=true \
@@ -24,7 +24,7 @@ PRODUCT_COPY_FILES += \
   vendor/gofree/prebuilt/system/org.mozilla.firefox/distribution/extensions/youtube-o2i@jetpack.xpi:system/org.mozilla.firefox/distribution/extensions/youtube-o2i@jetpack.xpi \
   vendor/gofree/prebuilt/system/org.mozilla.firefox/distribution/extensions/{fe272bd1-5f76-4ea4-8501-a05d35d823fc}.xpi:system/org.mozilla.firefox/distribution/extensions/{fe272bd1-5f76-4ea4-8501-a05d35d823fc}.xpi
 
-PRODUCT_PACKAGE_OVERLAYS += vendor/gofree/overlay/common
+PRODUCT_PACKAGE_OVERLAYS += vendor/gfreed/overlay/common
 
 ifneq ($(TARGET_BUILD_VARIANT),eng)
 ADDITIONAL_DEFAULT_PROPERTIES += ro.adb.secure=1
