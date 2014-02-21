@@ -2,16 +2,45 @@
 
 function fetch {
   export URL=$1
+  export LOCATION=$2
+  if [ "$2" == "" ] ; then
+    export LOCATION=data
+  fi
   export FILE=$(echo $URL | sed 's:.*/::')
+  export NAME=$(echo $FILE | sed 's:[.]apk::')
   (
     cd prebuilt/apps
     if ! [ -f "$FILE" ]; then
       wget "$URL"
     fi
   )
+  cat >> prebuilt/apps/Android.mk << EOF
+
+include \$(CLEAR_VARS)
+LOCAL_MODULE := $NAME
+LOCAL_MODULE_OWNER := gfreed
+LOCAL_SRC_FILES := \$(LOCAL_MODULE).apk
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_MODULE_CLASS := APPS
+LOCAL_CERTIFICATE := PRESIGNED
+EOF
+
+  case "$LOCATION" in
+    data) echo "LOCAL_MODULE_PATH := \$(TARGET_OUT_DATA_APPS)" >> prebuilt/apps/Android.mk ;;
+    vendor) echo "LOCAL_PROPRIETARY_MODULE := true" >> prebuilt/apps/Android.mk ;;
+    system) echo "LOCAL_MODULE_PATH := \$(TARGET_OUT_APPS)" >> prebuilt/apps/Android.mk ;;
+  esac
+
+  echo "include \$(BUILD_PREBUILT)" >> prebuilt/apps/Android.mk
+
+  echo -e -n " \\\\\n  $NAME" >> config/fetched_packages.mk
 }
 
-fetch 'https://f-droid.org/FDroid.apk'
+echo LOCAL_PATH := \$\(call my-dir\) > prebuilt/apps/Android.mk
+echo -n PRODUCT_PACKAGES += > config/fetched_packages.mk
+
+
+fetch 'https://f-droid.org/FDroid.apk' 'system'
 fetch 'https://ftp.mozilla.org/pub/mozilla.org/mobile/releases/latest/android/multi/fennec-27.0.multi.android-arm.apk'
 fetch 'https://f-droid.org/repo/com.google.zxing.client.android_95.apk'
 fetch 'https://f-droid.org/repo/net.androgames.level_33.apk'
@@ -32,27 +61,5 @@ fetch 'https://f-droid.org/repo/net.osmand.plus_145.apk'
 fetch 'https://f-droid.org/repo/com.menny.android.anysoftkeyboard_111.apk'
 fetch 'https://f-droid.org/repo/org.adaway_47.apk'
 fetch 'https://f-droid.org/repo/org.sufficientlysecure.localcalendar_6.apk'
-
-echo LOCAL_PATH := \$\(call my-dir\) > prebuilt/apps/Android.mk
-echo -n PRODUCT_PACKAGES += > config/fetched_packages.mk
-
-ls prebuilt/apps/*.apk | while read FILE ; do
-  APK=$(echo $FILE | sed 's:.*/::')
-  NAME=$(echo $APK | sed 's:[.]apk::')
-  echo -e -n " \\\\\n  $NAME" >> config/fetched_packages.mk
-  cat >> prebuilt/apps/Android.mk << EOF
-
-include \$(CLEAR_VARS)
-LOCAL_MODULE := $NAME
-LOCAL_MODULE_OWNER := gfreed
-LOCAL_SRC_FILES := \$(LOCAL_MODULE).apk
-LOCAL_PROPRIETARY_MODULE := true
-# LOCAL_MODULE_TAGS := tests
-LOCAL_MODULE_SUFFIX := .apk
-LOCAL_MODULE_CLASS := APPS
-LOCAL_CERTIFICATE := PRESIGNED
-include \$(BUILD_PREBUILT)
-EOF
-done
 
 echo >> config/fetched_packages.mk
