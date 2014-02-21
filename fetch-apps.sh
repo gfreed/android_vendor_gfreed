@@ -7,7 +7,6 @@ function fetch {
     cd prebuilt/apps
     if ! [ -f "$FILE" ]; then
       wget "$URL"
-      if which advzip && [ -f "$FILE" ] ; then advzip -z4 "$FILE" ; fi
     fi
   )
 }
