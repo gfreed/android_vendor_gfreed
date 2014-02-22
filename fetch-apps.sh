@@ -61,5 +61,7 @@ fetch 'https://f-droid.org/repo/net.osmand.plus_145.apk'
 fetch 'https://f-droid.org/repo/com.menny.android.anysoftkeyboard_111.apk'
 fetch 'https://f-droid.org/repo/org.adaway_47.apk'
 fetch 'https://f-droid.org/repo/org.sufficientlysecure.localcalendar_6.apk'
+fetch 'https://f-droid.org/repo/nl.mpcjanssen.simpletask_1074.apk'
+fetch 'http://fbreader.org/files/android/FBReaderJ_ice-cream-sandwich.apk'
 
 echo >> config/fetched_packages.mk
