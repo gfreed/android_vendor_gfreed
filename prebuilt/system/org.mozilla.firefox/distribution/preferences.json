@@ -6,12 +6,7 @@
   },
   "Preferences": {
     "datareporting.policy.dataSubmissionEnabled": false,
-    "browser.search.defaultenginename": "DuckDuckGo",
-    
-    "browser.search.order.1": "DuckDuckGo",
-    "browser.search.order.2": "Google",
-    "browser.search.order.3": "Bing",
-    "browser.search.order.4": "Yahoo"
+    "browser.search.defaultenginename": "DuckDuckGo"
   }
 }
 
