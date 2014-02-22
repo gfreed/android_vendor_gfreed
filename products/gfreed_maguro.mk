@@ -1,6 +1,7 @@
 $(call inherit-product, device/samsung/maguro/full_maguro.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full.mk)
 $(call inherit-product, vendor/gfreed/config/common.mk)
+$(call inherit-product, vendor/gfreed/config/gsm.mk)
 
 PRODUCT_NAME  := gfreed_maguro
 PRODUCT_BRAND := Android
