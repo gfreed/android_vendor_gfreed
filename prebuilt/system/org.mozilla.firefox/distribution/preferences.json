@@ -6,6 +6,7 @@
   },
   "Preferences": {
     "datareporting.policy.dataSubmissionEnabled": false,
+    "distribution.searchplugins.defaultLocale": "en",
     "browser.search.defaultenginename": "DuckDuckGo",
     "browser.search.order.1": "DuckDuckGo",
     "browser.search.order.2": "Google",
