@@ -20,6 +20,7 @@ PRODUCT_COPY_FILES += \
   vendor/gfreed/prebuilt/etc/init.local.rc:root/init.gfreed.rc \
   vendor/gfreed/prebuilt/system/org.mozilla.firefox/distribution/preferences.json:system/org.mozilla.firefox/distribution/preferences.json \
   vendor/gfreed/prebuilt/system/org.mozilla.firefox/distribution/searchplugins/common/duckduckgo.xml:system/org.mozilla.firefox/distribution/searchplugins/common/duckduckgo.xml \
+  vendor/gfreed/prebuilt/system/org.mozilla.firefox/distribution/searchplugins/common/duckduckgo.xml:system/org.mozilla.firefox/distribution/searchplugins/locale/en_US/duckduckgo.xml \
   vendor/gfreed/prebuilt/system/org.mozilla.firefox/distribution/extensions/jid1-JcGokIiQyjoBAQ@jetpack.xpi:system/org.mozilla.firefox/distribution/extensions/jid1-JcGokIiQyjoBAQ@jetpack.xpi \
   vendor/gfreed/prebuilt/system/org.mozilla.firefox/distribution/extensions/https-everywhere@eff.org.xpi:system/org.mozilla.firefox/distribution/extensions/https-everywhere@eff.org.xpi \
   vendor/gfreed/prebuilt/system/org.mozilla.firefox/distribution/extensions/jid1-C86cNe1crgj9bw@jetpack.xpi:system/org.mozilla.firefox/distribution/extensions/jid1-C86cNe1crgj9bw@jetpack.xpi \
