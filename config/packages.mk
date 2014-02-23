@@ -17,8 +17,7 @@ PRODUCT_PACKAGES += \
   Torch \
   OpenDelta \
   Apollo \
-  Superuser \
-  Stk
+  Superuser
 
 # libmemtrack is needed e.g. by foursquare
 # looks like it's available on all devices
