@@ -41,7 +41,8 @@ echo LOCAL_PATH := \$\(call my-dir\) > prebuilt/apps/Android.mk
 echo -n PRODUCT_PACKAGES += > config/fetched_packages.mk
 
 
-fetch 'https://f-droid.org/FDroid.apk' 'priv'
+fetch 'https://f-droid.org/FDroid.apk' 'system'
+fetch 'https://f-droid.org/repo/org.ntpsync_11.apk'
 fetch 'https://ftp.mozilla.org/pub/mozilla.org/mobile/releases/latest/android/multi/fennec-27.0.multi.android-arm.apk'
 fetch 'https://f-droid.org/repo/com.google.zxing.client.android_95.apk'
 fetch 'https://f-droid.org/repo/net.androgames.level_33.apk'
