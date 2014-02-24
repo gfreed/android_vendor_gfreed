@@ -5,8 +5,11 @@
     "about": "GfreeD ROM - a free software showcase ROM"
   },
   "Preferences": {
+    "datareporting.telemetry.enabled": false,
     "datareporting.policy.dataSubmissionEnabled": false,
+    "datareporting.crashreporter.submitEnabled": false,
     "distribution.searchplugins.defaultLocale": "en_US",
+    "browser.search.official": false,
     "browser.search.defaultenginename": "DuckDuckGo",
     "browser.search.order.1": "DuckDuckGo",
     "browser.search.order.2": "Google",
