@@ -17,7 +17,8 @@ PRODUCT_PACKAGES += \
   Torch \
   OpenDelta \
   Apollo \
-  Superuser
+  Superuser \
+  UnifiedNlp
 
 # libmemtrack is needed e.g. by foursquare
 # looks like it's available on all devices
