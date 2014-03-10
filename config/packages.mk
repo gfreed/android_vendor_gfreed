@@ -18,7 +18,8 @@ PRODUCT_PACKAGES += \
   OpenDelta \
   Apollo \
   Superuser \
-  UnifiedNlp
+  UnifiedNlp \
+  GSMLocation
 
 # libmemtrack is needed e.g. by foursquare
 # looks like it's available on all devices
