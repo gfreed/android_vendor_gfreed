@@ -14,7 +14,7 @@ PRODUCT_PACKAGES += \
   tune2fs \
   vim \
   CMFileManager \
-  Torch \
+  OmniTorch \
   OpenDelta \
   Apollo \
   Superuser \
