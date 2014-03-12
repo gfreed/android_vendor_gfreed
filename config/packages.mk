@@ -21,7 +21,6 @@ PRODUCT_PACKAGES += \
   UnifiedNlp \
   UnifiedNlpApi \
   NetworkLocation \
-  LegacyNetworkLocation \
   GSMLocation
 
 # libmemtrack is needed e.g. by foursquare
