@@ -19,6 +19,9 @@ PRODUCT_PACKAGES += \
   Apollo \
   Superuser \
   UnifiedNlp \
+  UnifiedNlpApi \
+  NetworkLocation \
+  LegacyNetworkLocation \
   GSMLocation
 
 # libmemtrack is needed e.g. by foursquare
