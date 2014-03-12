@@ -18,8 +18,6 @@ PRODUCT_PACKAGES += \
   OpenDelta \
   Apollo \
   Superuser \
-  UnifiedNlp \
-  UnifiedNlpApi \
   NetworkLocation \
   GSMLocation
 
