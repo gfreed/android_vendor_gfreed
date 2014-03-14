@@ -19,7 +19,9 @@ PRODUCT_PACKAGES += \
   Apollo \
   Superuser \
   NetworkLocation \
-  GSMLocation
+  GSMLocation \
+  com.google.android.maps \
+  com.google.android.maps.xml
 
 # libmemtrack is needed e.g. by foursquare
 # looks like it's available on all devices
