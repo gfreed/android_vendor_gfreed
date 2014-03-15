@@ -21,7 +21,9 @@ PRODUCT_PACKAGES += \
   NetworkLocation \
   GSMLocation \
   com.google.android.maps \
-  com.google.android.maps.xml
+  com.google.android.maps.xml \
+  FusedLocation \
+  AppDruid
 
 # libmemtrack is needed e.g. by foursquare
 # looks like it's available on all devices
