@@ -6,14 +6,18 @@
   },
   "Preferences": {
     "datareporting.telemetry.enabled": false,
+    "toolkit.telemetry.enabled": false,
     "datareporting.policy.dataSubmissionEnabled": false,
     "datareporting.crashreporter.submitEnabled": false,
     "distribution.searchplugins.defaultLocale": "en_US",
-    "browser.search.official": false,
-    "browser.search.defaultenginename": "DuckDuckGo",
+    "browser.search.official": true,
     "browser.search.order.1": "DuckDuckGo",
     "browser.search.order.2": "Google",
-    "browser.search.order.3": "Yahoo"
+    "browser.search.order.3": "Yahoo",
+    "browser.search.defaultenginename": "DuckDuckGo",
+    "browser.search.selectedEngine": "DuckDuckGo",
+    "browser.search.noCurrentEngine": false,
+    "browser.search.useDBForOrder": false
   }
 }
 
