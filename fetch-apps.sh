@@ -40,11 +40,19 @@ EOF
 echo LOCAL_PATH := \$\(call my-dir\) > prebuilt/apps/Android.mk
 echo -n PRODUCT_PACKAGES += > config/fetched_packages.mk
 
+VERSION=1
+if ! grep "$VERSION" prebuilt/apps/version &> /dev/null ; then
+  echo
+  echo "Version mismatch, deleting old APKs"
+  rm prebuilt/apps/*.apk
+  echo "$VERSION" > prebuilt/apps/version
+fi
+
 
 # fetch 'https://f-droid.org/FDroid.apk' 'system'
 fetch 'https://f-droid.org/repo/org.ntpsync_11.apk'
-fetch 'https://ftp.mozilla.org/pub/mozilla.org/mobile/releases/latest/android/multi/fennec-27.0.multi.android-arm.apk'
-fetch 'https://f-droid.org/repo/com.google.zxing.client.android_97.apk'
+fetch 'https://ftp.mozilla.org/pub/mozilla.org/mobile/releases/latest/android/multi/fennec-28.0.multi.android-arm.apk'
+fetch 'https://f-droid.org/repo/com.google.zxing.client.android_98.apk'
 fetch 'https://f-droid.org/repo/net.androgames.level_33.apk'
 fetch 'https://f-droid.org/repo/de.schildbach.wallet_160.apk'
 fetch 'https://f-droid.org/repo/org.videolan.vlc_1304.apk'
@@ -66,7 +74,7 @@ fetch 'https://f-droid.org/repo/net.osmand.plus_145.apk'
 fetch 'https://f-droid.org/repo/com.menny.android.anysoftkeyboard_111.apk'
 fetch 'https://f-droid.org/repo/org.adaway_48.apk'
 fetch 'https://f-droid.org/repo/org.sufficientlysecure.localcalendar_6.apk'
-fetch 'https://f-droid.org/repo/nl.mpcjanssen.simpletask_1075.apk'
+fetch 'https://f-droid.org/repo/nl.mpcjanssen.simpletask_1076.apk'
 fetch 'http://fbreader.org/files/android/FBReaderJ_ice-cream-sandwich.apk'
 fetch 'https://f-droid.org/repo/net.nurik.roman.muzei_1008.apk'
 fetch 'https://f-droid.org/repo/org.birthdayadapter_18.apk'
