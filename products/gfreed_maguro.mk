@@ -9,6 +9,10 @@ PRODUCT_MODEL := Gfreed on Maguro
 PRODUCT_DEVICE := maguro
 PRODUCT_RESTRICT_VENDOR_FILES := false
 
+PRODUCT_PROPERTY_OVERRIDES += \
+  ro.bq.gpu_to_cpu_unsupported=1 \
+  ro.zygote.disable_gl_preload=true
+
 PRODUCT_BUILD_PROP_OVERRIDES := \
   PRODUCT_NAME=yakju \
   BUILD_FINGERPRINT=google/yakju/maguro:4.3/JWR66Y/776638:user/release-keys \
