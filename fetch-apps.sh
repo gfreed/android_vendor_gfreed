@@ -4,7 +4,7 @@ function fetch {
   export URL=$1
   export NAME=$2
   export LOCATION=$3
-  if [ "$2" == "" ] ; then
+  if [ "$3" == "" ] ; then
     export LOCATION=data
   fi
   export FILE=$(echo $URL | sed 's:.*/::')
