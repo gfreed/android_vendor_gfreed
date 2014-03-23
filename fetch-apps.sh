@@ -2,16 +2,20 @@
 
 function fetch {
   export URL=$1
-  export LOCATION=$2
+  export NAME=$2
+  export LOCATION=$3
   if [ "$2" == "" ] ; then
     export LOCATION=data
   fi
   export FILE=$(echo $URL | sed 's:.*/::')
-  export NAME=$(echo $FILE | sed 's:_[0-9]*[.]apk::')
+  if [ "$NAME" == "" ]; then
+    export NAME=$(echo $FILE | sed 's:[.]apk$::' | sed 's:_[0-9]*$::')
+  fi
+  export FILE="$NAME.apk"
   (
     cd prebuilt/apps
     if ! [ -f "$FILE" ]; then
-      wget "$URL"
+      wget "$URL" -O "${NAME}.apk"
     fi
   )
   cat >> prebuilt/apps/Android.mk << EOF
@@ -49,9 +53,9 @@ if ! grep "$VERSION" prebuilt/apps/version &> /dev/null ; then
 fi
 
 
-# fetch 'https://f-droid.org/FDroid.apk' 'system'
+# fetch 'https://f-droid.org/FDroid.apk' 'fdroid' 'system'
 fetch 'https://f-droid.org/repo/org.ntpsync_11.apk'
-fetch 'https://ftp.mozilla.org/pub/mozilla.org/mobile/releases/latest/android/multi/fennec-28.0.multi.android-arm.apk'
+fetch 'https://ftp.mozilla.org/pub/mozilla.org/mobile/releases/latest/android/multi/fennec-28.0.multi.android-arm.apk' 'fennec'
 fetch 'https://f-droid.org/repo/com.google.zxing.client.android_98.apk'
 fetch 'https://f-droid.org/repo/net.androgames.level_33.apk'
 fetch 'https://f-droid.org/repo/de.schildbach.wallet_160.apk'
