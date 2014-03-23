@@ -21,9 +21,9 @@ function fetch {
   cat >> prebuilt/apps/Android.mk << EOF
 
 include \$(CLEAR_VARS)
-LOCAL_MODULE := $NAME
+LOCAL_MODULE := ${NAME}-gfreed
 LOCAL_MODULE_OWNER := gfreed
-LOCAL_SRC_FILES := \$(LOCAL_MODULE).apk
+LOCAL_SRC_FILES := ${NAME}.apk
 LOCAL_MODULE_SUFFIX := .apk
 LOCAL_MODULE_CLASS := APPS
 LOCAL_CERTIFICATE := PRESIGNED
@@ -38,7 +38,7 @@ EOF
 
   echo "include \$(BUILD_PREBUILT)" >> prebuilt/apps/Android.mk
 
-  echo -e -n " \\\\\n  $NAME" >> config/fetched_packages.mk
+  echo -e -n " \\\\\n  ${NAME}-gfreed" >> config/fetched_packages.mk
 }
 
 echo LOCAL_PATH := \$\(call my-dir\) > prebuilt/apps/Android.mk
