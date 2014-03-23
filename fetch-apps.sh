@@ -7,7 +7,7 @@ function fetch {
     export LOCATION=data
   fi
   export FILE=$(echo $URL | sed 's:.*/::')
-  export NAME=$(echo $FILE | sed 's:[.]apk::')
+  export NAME=$(echo $FILE | sed 's:_[0-9]*[.]apk::')
   (
     cd prebuilt/apps
     if ! [ -f "$FILE" ]; then
@@ -40,7 +40,7 @@ EOF
 echo LOCAL_PATH := \$\(call my-dir\) > prebuilt/apps/Android.mk
 echo -n PRODUCT_PACKAGES += > config/fetched_packages.mk
 
-VERSION=1
+VERSION=2
 if ! grep "$VERSION" prebuilt/apps/version &> /dev/null ; then
   echo
   echo "Version mismatch, deleting old APKs"
@@ -78,7 +78,7 @@ fetch 'https://f-droid.org/repo/nl.mpcjanssen.simpletask_1076.apk'
 fetch 'http://fbreader.org/files/android/FBReaderJ_ice-cream-sandwich.apk'
 fetch 'https://f-droid.org/repo/net.nurik.roman.muzei_1008.apk'
 fetch 'https://f-droid.org/repo/org.birthdayadapter_18.apk'
-fetch 'https://f-droid.org/repo/com.axelby.podax_56.apk'
 fetch 'https://f-droid.org/repo/at.bitfire.davdroid_30.apk'
+fetch 'https://f-droid.org/repo/de.danoeh.antennapod_33.apk'
 
 echo >> config/fetched_packages.mk
