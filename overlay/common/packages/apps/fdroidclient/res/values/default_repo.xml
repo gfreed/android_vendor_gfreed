@@ -6,7 +6,7 @@
     <string name="default_repo_name3" formatted="false">GuardianProject</string>
     <integer name="default_repo_inuse1">1</integer>
     <integer name="default_repo_inuse2">0</integer>
-    <integer name="default_repo_inuse1">1</integer>
+    <integer name="default_repo_inuse3">1</integer>
     <integer name="default_repo_priority1">10</integer>
     <integer name="default_repo_priority2">20</integer>
     <integer name="default_repo_priority3">21</integer>
