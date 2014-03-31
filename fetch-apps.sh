@@ -44,7 +44,7 @@ EOF
 echo LOCAL_PATH := \$\(call my-dir\) > prebuilt/apps/Android.mk
 echo -n PRODUCT_PACKAGES += > config/fetched_packages.mk
 
-VERSION=4
+VERSION=5
 if ! grep "$VERSION" prebuilt/apps/version &> /dev/null ; then
   echo
   echo "Version mismatch, deleting old APKs"
@@ -55,7 +55,7 @@ fi
 
 # fetch 'https://f-droid.org/FDroid.apk' 'fdroid' 'system'
 fetch 'https://f-droid.org/repo/org.ntpsync_11.apk'
-fetch 'https://ftp.mozilla.org/pub/mozilla.org/mobile/releases/latest/android/multi/fennec-28.0.multi.android-arm.apk' 'fennec'
+fetch 'https://ftp.mozilla.org/pub/mozilla.org/mobile/releases/latest/android/multi/fennec-28.0.1.multi.android-arm.apk' 'fennec'
 fetch 'https://f-droid.org/repo/com.google.zxing.client.android_99.apk'
 fetch 'https://f-droid.org/repo/net.androgames.level_33.apk'
 fetch 'https://f-droid.org/repo/de.schildbach.wallet_160.apk'
