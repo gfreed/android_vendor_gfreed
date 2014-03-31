@@ -44,7 +44,7 @@ EOF
 echo LOCAL_PATH := \$\(call my-dir\) > prebuilt/apps/Android.mk
 echo -n PRODUCT_PACKAGES += > config/fetched_packages.mk
 
-VERSION=3
+VERSION=4
 if ! grep "$VERSION" prebuilt/apps/version &> /dev/null ; then
   echo
   echo "Version mismatch, deleting old APKs"
@@ -65,7 +65,7 @@ fetch 'https://f-droid.org/repo/de.schaeuffelhut.android.openvpn_39.apk'
 fetch 'https://f-droid.org/repo/com.owncloud.android_105004.apk'
 fetch 'https://f-droid.org/repo/de.luhmer.owncloudnewsreader_39.apk'
 fetch 'https://f-droid.org/repo/org.jfedor.frozenbubble_23.apk'
-fetch 'https://f-droid.org/repo/org.sufficientlysecure.keychain_23100.apk'
+fetch 'https://f-droid.org/repo/org.sufficientlysecure.keychain_24000.apk'
 fetch 'https://f-droid.org/repo/com.kmagic.solitaire_450.apk'
 fetch 'https://f-droid.org/repo/cz.romario.opensudoku_1105.apk'
 fetch 'https://f-droid.org/repo/com.replica.replicaisland_14.apk'
@@ -82,7 +82,7 @@ fetch 'https://f-droid.org/repo/nl.mpcjanssen.simpletask_1076.apk'
 fetch 'http://fbreader.org/files/android/FBReaderJ_ice-cream-sandwich.apk'
 fetch 'https://f-droid.org/repo/net.nurik.roman.muzei_1008.apk'
 fetch 'https://f-droid.org/repo/org.birthdayadapter_18.apk'
-fetch 'https://f-droid.org/repo/at.bitfire.davdroid_30.apk'
+fetch 'https://f-droid.org/repo/at.bitfire.davdroid_34.apk'
 fetch 'https://f-droid.org/repo/de.danoeh.antennapod_33.apk'
 
 echo >> config/fetched_packages.mk
