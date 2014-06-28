@@ -2,6 +2,8 @@ SUPERUSER_EMBEDDED := true
 
 PRODUCT_BRAND ?= GfreeD
 
+OVERRIDE_RUNTIMES:=runtime_libart_default
+
 PRODUCT_PROPERTY_OVERRIDES += \
   keyguard.no_require_sim=true \
   ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html \
