@@ -2,7 +2,10 @@ SUPERUSER_EMBEDDED := true
 
 PRODUCT_BRAND ?= GfreeD
 
-OVERRIDE_RUNTIMES:=runtime_libart_default
+OVERRIDE_RUNTIMES := runtime_libart_default
+PRODUCT_RUNTIMES := runtime_libart_default
+
+BUILD_WITH_COLORS := 1
 
 PRODUCT_PROPERTY_OVERRIDES += \
   keyguard.no_require_sim=true \
