@@ -20,10 +20,11 @@ PRODUCT_PACKAGES += \
   Superuser \
   NetworkLocation \
   GSMLocation \
+  FakeStore \
+  UnifiedNlpApi \
   com.google.android.maps \
   com.google.android.maps.xml \
-  FusedLocation \
-  F-Droid
+  FusedLocation
 
 # libmemtrack is needed e.g. by foursquare
 # looks like it's available on all devices
