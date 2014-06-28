@@ -86,6 +86,6 @@ fetch 'https://f-droid.org/repo/org.torproject.android_107.apk'
 fetch 'https://f-droid.org/repo/info.guardianproject.browser_26.apk'
 fetch 'https://f-droid.org/repo/eu.siacs.conversations_16.apk'
 fetch 'https://f-droid.org/repo/org.sufficientlysecure.viewer_2500.apk'
-fetch 'http://dev-builds.libreoffice.org/daily/master/Android-ARM@24-Bytemark-Hosting/current/master~2014-06-28_05.28.09_LibreOffice4Android-debug.apk'
+fetch 'http://dev-builds.libreoffice.org/daily/master/Android-ARM@24-Bytemark-Hosting/current/master~2014-06-28_05.28.09_LibreOffice4Android-debug.apk' 'libreoffice'
 
 echo >> config/fetched_packages.mk
