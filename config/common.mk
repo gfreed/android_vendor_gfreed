@@ -11,7 +11,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
   ro.com.android.dataroaming=false \
   persist.sys.root_access=3 \
   ro.boot.selinux=disabled \
-  debug.sf.nobootanimation=1
+  debug.sf.nobootanimation=1 \
+  persist.sys.dalvik.vm.lib=libart.so
 
 PRODUCT_COPY_FILES += \
   vendor/gfreed/prebuilt/bin/sysinit:system/bin/sysinit \
