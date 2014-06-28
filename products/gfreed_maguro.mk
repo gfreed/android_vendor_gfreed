@@ -3,6 +3,9 @@ $(call inherit-product, vendor/gfreed/config/common.mk)
 $(call inherit-product, vendor/gfreed/config/gsm.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full.mk)
 
+TARGET_ARCH := arm
+ARGET_ARCH_VARIANT := armv7-a-neon
+
 PRODUCT_NAME  := gfreed_maguro
 PRODUCT_BRAND := Android
 PRODUCT_MODEL := Gfreed on Maguro
