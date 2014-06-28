@@ -24,7 +24,9 @@ PRODUCT_PACKAGES += \
   UnifiedNlpApi \
   com.google.android.maps \
   com.google.android.maps.xml \
-  FusedLocation
+  FusedLocation \
+  GmsCore \
+  FakeStore
 
 # libmemtrack is needed e.g. by foursquare
 # looks like it's available on all devices
