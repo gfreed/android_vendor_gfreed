@@ -53,7 +53,7 @@ if ! grep "$VERSION" prebuilt/apps/version &> /dev/null ; then
 fi
 
 
-# fetch 'https://f-droid.org/FDroid.apk' 'fdroid' 'system'
+fetch 'https://f-droid.org/FDroid.apk' 'fdroid' 'priv'
 fetch 'https://f-droid.org/repo/org.ntpsync_11.apk'
 fetch 'https://ftp.mozilla.org/pub/mozilla.org/mobile/releases/latest/android/multi/fennec-28.0.1.multi.android-arm.apk' 'fennec'
 fetch 'https://f-droid.org/repo/com.google.zxing.client.android_99.apk'
