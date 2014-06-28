@@ -44,7 +44,7 @@ EOF
 echo LOCAL_PATH := \$\(call my-dir\) > prebuilt/apps/Android.mk
 echo -n PRODUCT_PACKAGES += > config/fetched_packages.mk
 
-VERSION=5
+VERSION=6
 if ! grep "$VERSION" prebuilt/apps/version &> /dev/null ; then
   echo
   echo "Version mismatch, deleting old APKs"
