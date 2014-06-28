@@ -15,17 +15,12 @@ Status Quo
 ----------
 
 The base distribution has been forked from omnirom. Most projects are still
-pulled directly from omnirom or cyanogenmod, but that's a non-issue for most
-parts.
-
-Bugs:
-- K-9 has issues with html mails
+pulled directly from omnirom.
 
 Working:
 - Emulator
 - Google Nexus with
   - Phone hw
-- F-Droid (patch to make f-droid a "known" source was merges)
 - Many apps (pulled from f-droid and elsewhere)
 - Firefox with preinstalled plugins and DuckDuckGo
 
@@ -64,10 +59,9 @@ PrintService implementation
 Currenty print service implementations are closed source. Add an AirPrint
 plugin and perhaps some other discovery plugins.
 
-Contact merge / cleanup
-
-Contact sync works with DAVDroid but duplicated contacts are a PITA. Build
-something like the early HTC "Do you want to merge the following contacts?".
+Hint: There is an unmantained JfCupsPrintservice. I buildable version is
+      available at https://github.com/rtreffer/JfCupsPrintService/
+      Feel free to take over!
 
 Android sync
 
