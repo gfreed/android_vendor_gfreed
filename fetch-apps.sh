@@ -90,5 +90,6 @@ fetch 'https://f-droid.org/repo/org.sufficientlysecure.viewer_2500.apk'
 fetch 'http://measite.de/ContactMerger-1.0.3.apk' 'ContactMerger'
 fetch 'https://f-droid.org/repo/com.myopicmobile.textwarrior.android_13.apk'
 fetch 'https://f-droid.org/repo/com.fsck.k9_20005.apk'
+fetch 'https://f-droid.org/repo/com.uberspot.a2048_16.apk'
 
 echo >> config/fetched_packages.mk
