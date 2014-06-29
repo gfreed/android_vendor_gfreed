@@ -14,7 +14,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
   persist.sys.root_access=3 \
   ro.boot.selinux=disabled \
   debug.sf.nobootanimation=1 \
-  persist.sys.dalvik.vm.lib=libart.so
+  persist.sys.dalvik.vm.lib=libart.so \
+  ro.telephony.tetherdunrequired=0
 
 PRODUCT_COPY_FILES += \
   vendor/gfreed/prebuilt/bin/sysinit:system/bin/sysinit \
