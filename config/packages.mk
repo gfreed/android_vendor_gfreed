@@ -4,6 +4,8 @@ PRODUCT_PACKAGES += \
   fsck.exfat \
   htop \
   lsof \
+  zip \
+  unrar \
   mke2fs \
   mkfs.exfat \
   mount.exfat \
